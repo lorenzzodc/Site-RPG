@@ -1,0 +1,41 @@
+.menu {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border: 5px #fff;
+}
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Cinzel Decorative";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+#ativo {
+    background-color: #04AA6D;
+}
+
+/*
+caso seja necessário adicionar mais coisa / retria a margem do último elelmento
+li:last-child {
+  border-right: none;
+}
+*/

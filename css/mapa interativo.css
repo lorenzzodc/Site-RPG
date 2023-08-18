@@ -1,0 +1,18 @@
+
+.centralizador {
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+
+.mapa {
+    height: 700px;
+    width: 1400px;
+}
+
+.miniatura {
+    height: 200px;
+    width: 200px;
+    border-radius: 200px;
+    float:right;
+}

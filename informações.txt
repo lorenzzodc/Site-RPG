@@ -1,0 +1,27 @@
+datas
+04/09
+02/10
+30/10
+06/11
+22/11
+
+
+criar um sistema web
+
+tema livre
+
+Requisitos
+No futuro vai ter conexão com banco de dados
+minimo de 8 telas
+
+*index
+*Lore (arquivo pdf)
+*Localização 
+	*mapas internos
+*criação de NPC
+*loot Generator
+*Materiais pagos (ancors)
+*marcadores de status da campanha
+*lançador de dados
+*regras da casa
+
