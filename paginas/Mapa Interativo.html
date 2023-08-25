@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/menu2.css">
     <link rel="stylesheet" href="../css/mapa interativo.css">
     <link rel="stylesheet" href="../css/corpo.css">
 
@@ -14,47 +15,95 @@
 
 <body>
     <header>
-        <nav>
+        <section>
+            <nav>
+                <div class="topnav" id="myTopnav">
+                    <a href="../index.html" class="active"> Páginas</a>
+                    <a href="Deuses e Divindades.html">Deuses e Divindades</a>
+                    <a href="história do mundo.html">História do Mundo</a>
+                    <a href="Mapa Interativo.html">Mapa Interativo</a>
+                    <a href="Mecanicas e Regras da casa.html">Mecânicas e Regras da Casa</a>
+                    <a href="Politica e Faccoes.html">Política e Facções</a>
+                    <a href="Rastreiador de NPCs.html">Rastreiador de NPC</a>
+                    <a href="Sociedade.html">Sociedade</a>                      
+                    <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
+                        &#9776;
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <section>
+            <nav>
+                <div class="topnav2" id="myTopnav2">
+                    <a href="#" class="active2">
+                        Navegação</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Deuses
+                        </button>
+                        <div class="dropdownsub">
+                            <a href="#1.1">Aesthia</a>
+                            <a href="#1.2">Aphex</a>
+                            <a href="#1.3">Avandra</a>
+                            <a href="#1.4">Bahamut</a>
+                            <a href="#1.5">Chivunk</a>
+                            <a href="#1.6">Dokkaebi</a>
+                            <a href="#1.7">Fujin</a>
+                            <a href="#1.8">Melora</a>
+                            <a href="#1.9">Mora</a>
+                            <a href="#1.10">Thanos</a>
+                            <a href="#1.11">Thana</a>
+                            <a href="#1.11">Zenithar</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Entidades
+                        </button>
+                        <div class="dropdownsub">
+                            <a href="#2.1">Cthulhu</a>
+                            <a href="#2.2">Cavaleiros</a>
+                            <a href="#2.3">Gojira</a>
+                            <a href="#2.4">Gojira</a>
+                            <a href="#2.5">Malenia</a>
+                            <a href="#2.6">Mephisto</a>
+                            <a href="#2.7">Tiamat</a>
+                            <a href="#2.8">Vigaria</a>
+                            <a href="#2.9">Valquírias</a>
+                            
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            Planos de existência
+                        </button>
+                        <div class="dropdownsub">
+                            <a href="#3.1">Celestial</a>
+                            <a href="#3.2">Astral</a>
+                            <a href="#3.3">Material</a>
+                            <a href="#3.4">Fadas</a>
+                            <a href="#3.5">Umbral</a>
+                            <a href="#3.6">Infernal</a>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
+                        &#9776;
+                    </a>
 
-            <ul class="menu">
-                <li><a href="../index.html">Pagina Inicial</a></li>
-                <li><a href="história do mundo.html">História do Mundo</a></li>
-                <li><a href="Politica e Faccoes.html">Politica e Facções</a></li>
-                <li id="ativo"><a href="Mapa Interativo.html">Mapa Interativo</a></li>
-                <li><a href="Deuses e Divindades.html">Deuses e Divindades</a></li>
-                <li><a href="Sociedade.html">Sociedade</a></li>
-                <li><a href="Mecanicas e Regras da casa.html">Mecanicas e Regras da casa</a></li>
-                <li><a href="Rastreiador de NPCs.html">Rastreiador de NPCs</a></li>
-            </ul>
-        </nav>
+                </div>
+            </nav>
+        </section>
     </header>
     <br>
     <h1 id="cidade">MAPA INTERATIVO</h1>
-    <h3>Clique na cidade que queira visitar:</h3>
+    <h3>Clique no pin que queira visitar:</h3>
     <section>
-        <p class="centralizador">
-            <img src="../imagens/mapa.png" usemap="#mapa-game" alt="">
-        </p>
+        
+            <div  class="mapa">
+               <a href=""> <img id="pin1" src="/imagens/pin.png" alt=""></a>
 
-        <map name="mapa-game">
-            <area shape="circle" coords="309,143,40" href="#15" alt="Cidade de Somberlaide" title="Somberlaide">
-            <area shape="circle" coords="690,110,30" href="#7" alt="Cidade de Manacreek" title="Manacreek">
-            <area shape="circle" coords="830,180,40" href="#12" alt="Cidade de Runicstor" title="Runicstor">
-            <area shape="circle" coords="485,310,40" href="#10" alt="Cidade de Owlstor" title="Owlstor">
-            <area shape="circle" coords="710,305,40" href="#1" alt="Cidade de Bowfern" title="Bowfern">
-            <area shape="circle" coords="945,320,40" href="#16" alt="Cidade de Vassalpines" title="Vassalpines">
-            <area shape="circle" coords="415,409,40" href="#2" alt="Cidade de Branshade" title="Branshade">
-            <area shape="circle" coords="170,270,40" href="#9" alt="Cidade de Onyxlock" title="Onyxlock">
-            <area shape="circle" coords="190,495,40" href="#4" alt="Cidade de Everberg" title="Everberg">
-            <area shape="circle" coords="125,575,40" href="#13" alt="Cidade de Shortdeep" title="Shortdeep">
-            <area shape="circle" coords="538,620,40" href="#3" alt="Cidade de Deadbar" title="Deadbar">
-            <area shape="circle" coords="620,653,40" href="#8" alt="Cidade de Mudburn" title="Mudburn">
-            <area shape="circle" coords="592,510,40" href="#5" alt="Cidade de Jaberdale" title="Jaberdale">
-            <area shape="circle" coords="705,535,40" href="#11" alt="Cidade de Quill Abbey" title="Quill Abbey">
-            <area shape="circle" coords="872,418,40" href="#0" alt="Cidade de Astraloft" title="Astraloft">
-            <area shape="circle" coords="1050,420,40" href="#6" alt="Cidade de Javelinfiled" title="Javelinfiled">
-            <area shape="circle" coords="1240,469,40" href="#14" alt="Cidade de Sleekcobe" title="Sleekcobe">
-        </map>
+            </div>
+    
 
     </section>
 

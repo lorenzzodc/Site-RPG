@@ -1,3 +1,7 @@
 
-Como colocar uma imagem (pin) em cima de outra imagem (Mapa) na Aba Mapa Interativo;
+Como colocar uma imagem (pin) em cima de outra imagem (Mapa) na Aba Mapa Interativo; feito fazer diz com a imagem de fundo e colocar os pins por cima;
+
+arrumar o menu responsivo
+
+como deixar o menu fixo sem quebrar 
 

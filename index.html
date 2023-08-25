@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
     <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/menu2.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/corpo.css">
     <title>Calen Emyn</title>
@@ -14,19 +15,40 @@
 <body>
     <main>
         <header>
+            <section>
+                <nav>
+                    <div class="topnav" id="myTopnav">
+                        <a href="index.html" class="active"> Páginas</a>
+                        <a href="paginas/Deuses e Divindades.html">Deuses e Divindades</a>
+                        <a href="paginas/história do mundo.html">História do Mundo</a>
+                        <a href="paginas/Mapa Interativo.html">Mapa Interativo</a>
+                        <a href="paginas/Mecanicas e Regras da casa.html">Mecânicas e Regras da Casa</a>
+                        <a href="paginas/Politica e Faccoes.html">Política e Facções</a>
+                        <a href="paginas/Rastreiador de NPCs.html">Rastreiador de NPC</a>
+                        <a href="paginas/Sociedade.html">Sociedade</a>                      
+                        <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
+                            &#9776;
+                        </a>
 
-            <ul class="menu">
-                <li id="ativo"><a href="index.html">Pagina Inicial</a></li>
-                <li><a href="paginas/história do mundo.html">História do Mundo</a></li>
-                <li><a href="paginas/Politica e Faccoes.html">Politica e Facções</a></li>
-                <li><a href="paginas/Mapa Interativo.html">Mapa Interativo</a></li>
-                <li><a href="paginas/Deuses e Divindades.html">Deuses e Divindades</a></li>
-                <li><a href="paginas/Sociedade.html">Sociedade</a></li>
-                <li><a href="paginas/Mecanicas e Regras da casa.html">Mecanicas e Regras da casa</a>
-                </li>
-                <li><a href="paginas/Rastreiador de NPCs.html">Rastreiador de NPCs</a></li>
-            </ul>
+                    </div>
+                </nav>
+            </section>
         </header>
+        <section>
+            <nav>
+                <div class="topnav2" id="myTopnav2">
+                    <a href="#" class="active2">Navegação</a>
+                    <a href="#">O que é Calen Emyn?</a>
+                    <a href="#">Para quais Sistemas?</a>
+                    <a href="#">Qual a historia?</a>
+                    <a href="#">Página 6</a>
+                    <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
+                        &#9776;
+                    </a>
+
+                </div>
+            </nav>
+        </section>
         <section>
             <br>
             <h1 id="1"> O que é Calen Emyn?</h1>
@@ -39,6 +61,25 @@
             <p></p>
 
         </section>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+            function myFunction() {
+                var x = document.getElementById("myTopnav2");
+                if (x.className === "topnav2") {
+                    x.className += " responsive2";
+                } else {
+                    x.className = "topnav2";
+                }
+            }
+        </script>
+
     </main>
 
 </html>
