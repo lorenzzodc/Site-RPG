@@ -1,6 +1,8 @@
 body {
     background-color: whitesmoke;
+    cursor: url("http://www.rw-designer.com/cursor-extern.php?id=161543"),default;
 }
+
 
 h1 {
     font-family: "Cinzel Decorative";
@@ -41,6 +43,7 @@ p {
     padding-left: 15%;
     padding-right: 10%;
 }
+
 .texto {
     display: flex;
     align-items: center;
