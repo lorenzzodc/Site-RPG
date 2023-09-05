@@ -65,19 +65,7 @@ padding-right: 47px;}
 	text-align: left;
 	
 }
-.topnav a:hover, .dropdown:hover{
-	background-color: #555;
-	color: white;
-}
-.dropdownsub a:hover{
-	background-color: #ddd;
-	color: black;
-	
-}
-.dropdown:hover .dropdownsub{
-	display: block;
-	
-}
+
 
 @media screen and (max-width: 750px){
 	.topnav a:not(:first-child), .dropdown .dropbtn {

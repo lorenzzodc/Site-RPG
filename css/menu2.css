@@ -37,6 +37,7 @@
 	font-family: inherit;
 	font-weight: 900;
 	margin: 0;
+	cursor: pointer;
 	
 	
 }
@@ -48,6 +49,9 @@
 	box-shadow: 10px 18px 26px 10px rgba (0,0,0,0.2);
 	
 }
+.show {display:block;}
+
+.hide {display: none;}
 .dropdownsub a{
 	float: none;
 	color: white;
@@ -55,6 +59,7 @@
 	text-decoration: none;
 	display: block;
 	text-align: left;
+	
 	
 }
 .topnav2 a:hover, .dropdown:hover{
@@ -66,10 +71,7 @@
 	color: black;
 	
 }
-.dropdown:hover .dropdownsub{
-	display: block;
-	
-}
+
 
 @media screen and (max-width: 750px){
 	.topnav2 a:not(:first-child), .dropdown .dropbtn {

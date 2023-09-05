@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/menu2.css">
     <link rel="stylesheet" href="../css/deuses e divindades.css">
     <link rel="stylesheet" href="../css/corpo.css">
+    <script type="text/javascript"  src="../js/scrpits.js"></script>
     <title>Calen Emyn</title>
 </head>
 
@@ -38,10 +39,10 @@
                     <a href="#" class="active2">
                         Navegação</a>
                     <div class="dropdown">
-                        <button class="dropbtn">
+                        <button id="myBtn" class="dropbtn" onclick="myFunction3()">
                             Deuses
                         </button>
-                        <div class="dropdownsub">
+                        <div id="myDropdown" class="dropdownsub">
                             <a href="#1.1">Aesthia</a>
                             <a href="#1.2">Aphex</a>
                             <a href="#1.3">Avandra</a>
@@ -57,10 +58,10 @@
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn">
+                        <button id="myBtn2" class="dropbtn" onclick="myFunction4()">
                             Entidades
                         </button>
-                        <div class="dropdownsub">
+                        <div id="myDropdown2" class="dropdownsub">
                             <a href="#2.1">Cthulhu</a>
                             <a href="#2.2">Cavaleiros</a>
                             <a href="#2.3">Gojira</a>
@@ -70,14 +71,14 @@
                             <a href="#2.7">Tiamat</a>
                             <a href="#2.8">Vigaria</a>
                             <a href="#2.9">Valquírias</a>
-                            
+
                         </div>
                     </div>
                     <div class="dropdown">
-                        <button class="dropbtn">
+                        <button id="myBtn3" class="dropbtn" onclick="myFunction5()">
                             Planos de existência
                         </button>
-                        <div class="dropdownsub">
+                        <div id="myDropdown3" class="dropdownsub" onclick="myFunction5()">
                             <a href="#3.1">Celestial</a>
                             <a href="#3.2">Astral</a>
                             <a href="#3.3">Material</a>
@@ -272,7 +273,7 @@
             </div>
             <div> <img class="miniatura" src="../imagens/Deuses/Mephisto.jfif" alt=""></div>
         </div>
-         
+
         <h2 id="2.7">Tiamat, a Rainha dos Dragões</h2>
         <div class="texto">
             <div>
@@ -282,7 +283,7 @@
                 </p>
             </div>
             <div> <img class="miniatura" src="../imagens/Deuses/Tiamat.png" alt=""></div>
-        </div>      
+        </div>
         <h2 id="2.8">Vigária Amélia</h2>
         <div class="texto">
             <div>
@@ -303,8 +304,8 @@
                 </p>
             </div>
             <div> <img class="miniatura" src="../imagens/Deuses/Valquirias.jfif" alt=""></div>
-        </div>    
-        <!-------------------------------FIM ENTIDADES--------------------------------------------------->       
+        </div>
+        <!-------------------------------FIM ENTIDADES--------------------------------------------------->
 
         <hr>
         <h1 id="3">PLANOS DE EXISTÊNCIA</h1>
@@ -386,25 +387,7 @@
         </div>
 
 
-    </SECtion>
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        } 
-        function myFunction2() {
-            var x = document.getElementById("myTopnav2");
-            if (x.className === "topnav2") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav2";
-            }
-        }
-    </script>
-</body>
+    </section>
+   
 
 </html>

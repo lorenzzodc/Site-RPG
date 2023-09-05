@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/menu2.css">
     <link rel="stylesheet" href="../css/corpo.css">
     <link rel="stylesheet" href="../css/sociedade.css">
+    <script src="../js/scrpits.js"></script>
 
     <title>Calen Emyn</title>
 </head>
@@ -38,10 +39,40 @@
         <nav>
             <div class="topnav2" id="myTopnav2">
                 <a href="#" class="active2">Navegação</a>
-                <a href="#">O que é Calen Emyn?</a>
-                <a href="#">Para quais Sistemas?</a>
-                <a href="#">Qual a historia?</a>
-                <a href="#">Página 6</a>
+                <div class="dropdown">
+                    <button id="myBtn" class="dropbtn" onclick="myFunction3()">
+                        Raças
+                    </button>
+                    <div id="myDropdown" class="dropdownsub">
+                        <a href="#0">Aasimares</a>
+                        <a href="#1">Anões</a>
+                        <a href="#2">Centauros</a>
+                        <a href="#3">Changelings</a>
+                        <a href="#4">Dhampirs</a>
+                        <a href="#5">Drows</a>
+                        <a href="#6">Draconatos</a>
+                        <a href="#7">Elfos</a>
+                        <a href="#8">Gnomos</a>
+                        <a href="#9">Goblins</a>
+                        <a href="#10">Goliaths</a>
+                        <a href="#11">Halflings</a>
+                        <a href="#12">Humanos</a>
+                        <a href="#13">Kenku</a>
+                        <a href="#14">Leoninos</a>
+                        <a href="#15">Loxodontes</a>
+                        <a href="#16">Minotauros</a>
+                        <a href="#17">Orcs</a>
+                        <a href="#18">Povo Lagarto</a>
+                        <a href="#19">Shadar-kai</a>
+                        <a href="#20">Shifter</a>
+                        <a href="#21">Sátiro</a>
+                        <a href="#22">Tebaxi</a>
+                        <a href="#23">Thri-kreen</a>
+                        <a href="#24">Tiefling</a>
+                        <a href="#25">Tritão</a>
+                    </div>
+                </div>
+                    
                 <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction2()">
                     &#9776;
                 </a>
@@ -57,7 +88,7 @@
             todos, embora conflitos armados entre cidades sejam raros, mas não inexistentes. Os pactos foram
             estabelecidos para evitar conflitos desnecessários, mas, ocasionalmente, escaramuças acontecem.
         </p>
-        <h2>Raças</h2>
+        <h2 id="0">Raças</h2>
         <h3>Aasimares</h3>
         <div class="texto">
             <div>
@@ -335,24 +366,6 @@
         
     </section>
 
-    <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-        function myFunction2() {
-            var x = document.getElementById("myTopnav2");
-            if (x.className === "topnav2") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav2";
-            }
-        }
-    </script>
 </body>
 
 </html>
