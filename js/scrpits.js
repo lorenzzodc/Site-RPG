@@ -41,3 +41,14 @@ function myFunction7() {
     document.getElementById("myDropdown5").classList.toggle("show");
 }
 
+function recarregarIframe() {
+    // Obtém o elemento iframe pelo ID
+    var iframe = document.getElementById('meuIframe');
+    
+    // Obtém a origem (src) atual do iframe
+    var src = iframe.src;
+    
+    // Define o src do iframe como vazio e, em seguida, restaura a origem original
+    iframe.src = '';
+    iframe.src = src;
+}

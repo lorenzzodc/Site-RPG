@@ -64,3 +64,9 @@ p {
 .div-corpo{
     margin-top: 5%;
 }
+strong{
+    font-family:  "Cinzel Decorative";
+    font-weight: 900;
+    color: #04AA6D;
+    font-size: 34px;
+}
