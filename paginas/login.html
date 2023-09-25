@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/menu2.css">
+    <link rel="stylesheet" href="../css/corpo.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <script src="../js/scrpits.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <section>
+                <nav>
+                    <div class="topnav" id="myTopnav">
+                        <a href="../index.html" class="active"> inicio</a>
+                        <a href="paginas/Deuses e Divindades.html">Deuses e Divindades</a>
+                        <a href="paginas/história do mundo.html">História do Mundo</a>
+                        <a href="paginas/Mapa Interativo.html">Mapa Interativo</a>
+                        <a href="paginas/Bestiario.html">Bestiário</a>
+                        <a href="paginas/Politica e Faccoes.html">Política e Facções</a>
+                        <a href="paginas/Rastreiador de NPCs.html">Rastreiador de NPC</a>
+                        <a href="paginas/Sociedade.html">Sociedade</a>
+                        <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
+                            &#9776;
+                        </a>
+
+                    </div>
+                </nav>
+            </section>
+        </header>
+        <form action="..php/login.php" method="post">
+            <h3>L O G I N</h3>
+            <input type="text" name="email" placeholder="Seu e-mail">
+            <input type="password" name="senha" placeholder="sua senha">
+            <input type="submit" name="enviar" value="Entrar">
+        </form>
+    </main>
+</body>
+
+</html>

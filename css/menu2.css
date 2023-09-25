@@ -15,7 +15,22 @@
 	font-size: 15px;
 	font-weight: 900;
 	display: block;
-	padding-right: 14px;
+	padding-right: 48px;
+}
+.topnav2 a:last-child{
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+	display: none;
+	padding-right: 15px;
+}
+
+.topnav2 a:last-child :hover{
+	color: black;
+	background-color: black;
 }
 
 .active2{
@@ -63,15 +78,7 @@
 	
 	
 }
-.topnav2 a:hover, .dropdown:hover{
-	background-color: #555;
-	color: white;
-}
-.dropdownsub a:hover{
-	background-color: #ddd;
-	color: black;
-	
-}
+
 
 
 @media screen and (max-width: 750px){
@@ -81,6 +88,7 @@
 	.topnav2 a.icon{
 		float: right;
 		display: block;
+		
 	}
 	.topnav2.responsive{
 		position: relative;
