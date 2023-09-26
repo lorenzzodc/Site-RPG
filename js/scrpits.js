@@ -52,3 +52,21 @@ function recarregarIframe() {
     iframe.src = '';
     iframe.src = src;
 }
+
+function CarregarForm(){
+    // Declara a variável de controle
+let isFormVisible = false;
+
+// Declara o elemento formulário
+const form = document.querySelector(".cadastro");
+
+// Declara o evento onclick do botão
+const button = document.querySelector(".botao");
+button.addEventListener("click", function() {
+  // Altera o estado do formulário
+  isFormVisible = !isFormVisible;
+
+  // Define o atributo display do formulário
+  form.style.display = isFormVisible ? "block" : "none";
+});
+}

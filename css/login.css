@@ -32,7 +32,7 @@ form input[type=password] {
 }
 
 form input[type=submit] {
-    width: 100%;
+    width: 33%;
     height: 30px;
     cursor: pointer;
     background-color: #146dc0;
@@ -45,9 +45,17 @@ form input[type=submit] {
     border-radius: 20px;
     margin: 10px;
 }
-a{
-   height: 30px;
-   width: 30px; 
+form input[type=submit]:hover{
+    background-color: #04AA6D;
+    transform: scale(1.1);
+    color: #333;
+
+}
+
+form a{
+    width: 50%;
+    height: 50px;
+    cursor: pointer;
     background-color: #146dc0;
     color: white;
     font-family: "Cinzel Decorative";
@@ -56,5 +64,26 @@ a{
     border: 0;
     text-align: center;
     border-radius: 20px;
-    margin: 10px;
+    padding: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-decoration: none;
+    margin-left: 150px;
+}
+form a:hover{
+    background-color: #04AA6D;
+    transform: scale(1.2);
+    color: #333;  
+}
+
+
+.cadastro form{
+}
+
+@media all and (max-width: 600px) {
+form a{
+    margin-left: 50px;
+
+}
+
 }
