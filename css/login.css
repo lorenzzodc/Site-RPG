@@ -34,7 +34,7 @@ input[type=email] {
 }
 
 form input[type=submit] {
-    width: 100%;
+    width: 50%;
     height: 30px;
     cursor: pointer;
     background-color: #146dc0;
@@ -51,5 +51,4 @@ form input[type=submit] {
 @media all and (max-width: 600px) {
     form {
         margin-left: 10%;
-    }
-}
+    }}

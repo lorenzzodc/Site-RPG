@@ -51,6 +51,7 @@ iframe {
 
 #reset:hover {
     background-color: #04AA6D;
+    color: #333;
     transform: scale(1.1);
 }
 
@@ -68,6 +69,6 @@ iframe{
 }
 
 #reset{
-    margin-left: ;
+    
 }
 }
