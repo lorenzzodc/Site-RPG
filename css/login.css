@@ -9,7 +9,8 @@ form {
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-margin-left: 40%;}
+    margin-left: 41%;
+}
 
 form h3 {
     text-align: center;
@@ -50,5 +51,6 @@ form input[type=submit] {
 
 @media all and (max-width: 600px) {
     form {
-        margin-left: 10%;
-    }}
+        margin-left: 14%;
+    }
+}
