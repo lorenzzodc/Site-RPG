@@ -36,7 +36,7 @@
     </header>
     <section>
         <div>
-            <form action="#" method="post" id="1">
+            <form action="../php/verificaLogin.php" method="post" id="1">
                 <h3>L O G I N</h3>
                 <input type="text" name="usuario" placeholder="Seu nome de usuário">
                 <input type="password" name="senha" placeholder="sua senha">
@@ -46,7 +46,7 @@
 
         <div>
             <h6>Cadastro de Usuário</h6>
-            <form action="#" method="post">
+            <form action="../php/cadastrarLogin.php" method="post">
                 <label for="nome">Nome:
                 <input type="text"  name="nome" required maxlength="50"></label>
 
@@ -54,12 +54,15 @@
                 <input type="email" name="email" required maxlength="40"></label>
 
                 <label for="senha">Senha:
-                <input type="password" name="senha" required maxlength="32"></label>
+                    <input type="password" id="senha" name="senha" required maxlength="32">
+                </label>
+        
+                <label for="senha2">Confirme a senha:
+                    <input type="password" id="senha2" name="senha2" required maxlength="32">
+                </label>
+        
 
-                <label for="senha">Confirme a senha:
-                <input type="password"  name="senha2" required maxlength="32"></label>
-
-                <input type="submit" value="Cadastrar">
+                <input type="submit" value="Cadastrar" onclick="return validarSenha()">
             </form>
         </div>
 
