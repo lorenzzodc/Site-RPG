@@ -50,10 +50,10 @@ function myFunction7() {
 function recarregarIframe() {
     // Obtém o elemento iframe pelo ID
     var iframe = document.getElementById('meuIframe');
-    
+
     // Obtém a origem (src) atual do iframe
     var src = iframe.src;
-    
+
     // Define o src do iframe como vazio e, em seguida, restaura a origem original
     iframe.src = '';
     iframe.src = src;

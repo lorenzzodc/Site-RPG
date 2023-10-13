@@ -19,15 +19,21 @@ if ($stmt->num_rows === 1) {
     if (password_verify($senha, $hashed_password)) {
         // Senha correta, login bem-sucedido
         echo "<script language='javascript' type='text/javascript'>
-            alert('Cadastro realizado com sucesso!');
+            alert('Bem Vindo!');
             window.location.href='../paginas/interna.html';
             </script>";
         // Senha incorreta
-        echo 'Login falhou. Verifique suas credenciais.';
+        echo "<script language='javascript' type='text/javascript'>
+        alert('Senha Errada!');
+        window.location.href='../paginas/login.html';
+        </script>";
     }
 } else {
     // Nome de usuário não encontrado
-    echo 'Login falhou. Verifique suas credenciais.';
+    echo "<script language='javascript' type='text/javascript'>
+    alert('Login Falhou, tente novamente');
+    window.location.href='../paginas/login.html';
+    </script>";;
 }
 
 
