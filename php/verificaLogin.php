@@ -1,43 +1,28 @@
 <?php
 
 include("conexaoDB.php");
-$usuario=$_POST['usuario'];
-$senha=$_POST['senha'];
-
-
-$sql = "SELECT id, senha FROM usuarios WHERE nome = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("s", $usuario);
-$stmt->execute();
-$stmt->store_result();
-
-if ($stmt->num_rows === 1) {
-    // Usuário encontrado, verifique a senha
-    $stmt->bind_result($id, $hashed_password);
-    $stmt->fetch();
-
-    if (password_verify($senha, $hashed_password)) {
-        // Senha correta, login bem-sucedido
-        echo "<script language='javascript' type='text/javascript'>
-            alert('Bem Vindo!');
-            window.location.href='../paginas/interna.html';
-            </script>";
-        // Senha incorreta
-        echo "<script language='javascript' type='text/javascript'>
-        alert('Senha Errada!');
-        window.location.href='../paginas/login.html';
-        </script>";
-    }
-} else {
-    // Nome de usuário não encontrado
-    echo "<script language='javascript' type='text/javascript'>
-    alert('Login Falhou, tente novamente');
-    window.location.href='../paginas/login.html';
-    </script>";;
-}
-
-
-// Feche a conexão com o banco de dados
-$stmt->close();
-$conn->close();
+	$login = $_POST['usuario'];
+	$senha = $_POST['senha'];
+	$entrar = $_POST['entrar'];
+	
+	$criptografia = MD5($senha);
+	
+	if(isset($entrar)){
+		$verifica = 
+		mysqli_query($conn,"SELECT * 
+		FROM usuarios WHERE nome = '$login' and 
+		senha = '$criptografia'")
+		or die("Erro ao buscar no 
+		banco");
+		if(mysqli_num_rows($verifica)<=0){
+		echo "<script language='javascript' type='text/javascript'>
+		alert('Usuário ou senha incorretos!');
+		window.location.href='login.php';
+		</script>";	
+		die();
+		}else{
+			setcookie("login",$login, time() + 60);
+			header("Location:../paginas/interna.php");
+		}
+	}
 ?>

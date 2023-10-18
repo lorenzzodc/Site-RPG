@@ -19,14 +19,14 @@
         <section>
             <nav>
                 <div class="topnav" id="myTopnav">
-                    <a href="../index.html" class="active"> Sair</a>
-                    <a href="Deuses e Divindades.html">Deuses e Divindades</a>
-                    <a href="história do mundo.html">História do Mundo</a>
-                    <a href="Mapa Interativo.html">Mapa Interativo</a>
-                    <a href="Bestiario.html">Bestiário</a>
-                    <a href="Politica e Faccoes.html">Política e Facções</a>
-                    <a href="Rastreiador de NPCs.html">Rastreiador de NPC</a>
-                    <a href="Sociedade.html">Sociedade</a>
+                    <a href="../index.php" class="active"> Sair</a>
+                    <a href="Deuses e Divindades.php">Deuses e Divindades</a>
+                    <a href="história do mundo.php">História do Mundo</a>
+                    <a href="Mapa Interativo.php">Mapa Interativo</a>
+                    <a href="Bestiario.php">Bestiário</a>
+                    <a href="Politica e Faccoes.php">Política e Facções</a>
+                    <a href="Rastreiador de NPCs.php">Rastreiador de NPC</a>
+                    <a href="Sociedade.php">Sociedade</a>
                     <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
                         &#9776;
                     </a>

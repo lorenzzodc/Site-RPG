@@ -5,7 +5,7 @@ $nome = $_POST["nome"];
 $email = $_POST["email"];
 $senha = $_POST["senha"];
 
-$senhaHash = password_hash($senha, PASSWORD_DEFAULT);
+$senhaHash = md5($senha);
 
           $u = new Usuario();
           $u->setNome($nome);
@@ -19,7 +19,7 @@ $senhaHash = password_hash($senha, PASSWORD_DEFAULT);
           if ($conn->query($sql) === true) {
             echo "<script language='javascript' type='text/javascript'>
             alert('Cadastro realizado com sucesso!');
-            window.location.href='../paginas/login.html';
+            window.location.href='../paginas/login.php';
             </script>";
             die();
         } else {

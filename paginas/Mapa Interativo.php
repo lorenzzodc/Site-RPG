@@ -19,14 +19,14 @@
         <section>
             <nav>
                 <div class="topnav" id="myTopnav">
-                    <a href="../index.html" class="active"> inicio</a>
-                    <a href="Deuses e Divindades.html">Deuses e Divindades</a>
-                    <a href="história do mundo.html">História do Mundo</a>
-                    <a href="Mapa Interativo.html">Mapa Interativo</a>
-                    <a href="Bestiario.html">Bestiário</a>
-                    <a href="Politica e Faccoes.html">Política e Facções</a>
-                    <a href="Rastreiador de NPCs.html">Rastreiador de NPC</a>
-                    <a href="Sociedade.html">Sociedade</a>                      
+                    <a href="../index.php" class="active"> inicio</a>
+                    <a href="Deuses e Divindades.php">Deuses e Divindades</a>
+                    <a href="história do mundo.php">História do Mundo</a>
+                    <a href="Mapa Interativo.php">Mapa Interativo</a>
+                    <a href="Bestiario.php">Bestiário</a>
+                    <a href="Politica e Faccoes.php">Política e Facções</a>
+                    <a href="Rastreiador de NPCs.php">Rastreiador de NPC</a>
+                    <a href="Sociedade.php">Sociedade</a>                      
                     <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
                         &#9776;
                     </a>
@@ -36,7 +36,7 @@
         <section>
             <nav>
                 <div class="topnav2" id="myTopnav2">
-                    <a href="login.html" class="active2">
+                    <a href="login.php" class="active2">
                         login</a>
                     <div class="dropdown">
                         <button id="myBtn" class="dropbtn" onclick="myFunction3()">
