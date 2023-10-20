@@ -21,8 +21,9 @@ include("conexaoDB.php");
 		</script>";	
 		die();
 		}else{
-			setcookie("login",$login, time() + 60);
-			header("Location:../paginas/interna.php");
+			session_start();
+			$_SESSION['nome_usu_sessao']=$login;
+			header('location:interna.php');
 		}
 	}
 ?>

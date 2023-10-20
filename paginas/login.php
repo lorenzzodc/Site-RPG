@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,7 +39,7 @@
     </header>
     <section>
         <div>
-            <form action="../php/verificaLogin.php" method="post" id="1">
+            <form action="verificaLogin.php" method="post" id="1">
                 <h3>L O G I N</h3>
                 <input type="text" name="usuario" placeholder="Seu nome de usuário">
                 <input type="password" name="senha" placeholder="sua senha">
@@ -46,7 +49,7 @@
 
         <div>
             <h6>Cadastro de Usuário</h6>
-            <form action="../php/cadastrarLogin.php" method="post">
+            <form action="cadastrarLogin.php" method="post">
                 <label for="nome">Nome:
                 <input type="text"  name="nome" required maxlength="50"></label>
 
@@ -62,7 +65,7 @@
                 </label>
         
 
-                <input type="submit" value="Cadastrar" onclick="validarSenha()">
+                <input type="submit" value="Cadastrar">
             </form>
         </div>
 

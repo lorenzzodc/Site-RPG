@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +29,19 @@
                         <a href="Bestiario.php">Bestiário</a>
                         <a href="Politica e Faccoes.php">Política e Facções</a>
                         <a href="Rastreiador de NPCs.php">Rastreiador de NPC</a>
-                        <a href="Sociedade.php">Sociedade</a>                      
+                        <a href="Sociedade.php">Sociedade</a>  
+                        <a><?php
+				if (isset($_SESSION['nome_usu_sessao'])) {
+					echo "<a href='interna.php'>Interna</a>";
+				} else {
+					
+				}
+				if (isset($_GET['logout'])) {
+					session_destroy();
+					header("location:../index.php");
+				}
+
+				?></a>                   
                         <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
                             &#9776;
                         </a>
@@ -38,7 +53,18 @@
         <section>
             <nav>
                 <div class="topnav2" id="myTopnav2">
-                    <a href="login.php" class="active2">login</a>
+                <?php
+				if (isset($_SESSION['nome_usu_sessao'])) {
+					echo "<a href='../index.php?logout' class='active2'>| sair |</a>";
+				} else {
+					echo "<a href=login.php class='active2'>login</a>";
+				}
+				if (isset($_GET['logout'])) {
+					session_destroy();
+					header("location:index.php");
+				}
+
+				?>
                     <a href="#2">Pacto Unificado</a>
                     <a href="#3">Pacto do Tomo</a>
                     <a href="#4">Conselho de Emyn</a>

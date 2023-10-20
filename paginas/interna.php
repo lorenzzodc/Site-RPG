@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,6 +30,18 @@
                     <a href="Politica e Faccoes.php">Política e Facções</a>
                     <a href="Rastreiador de NPCs.php">Rastreiador de NPC</a>
                     <a href="Sociedade.php">Sociedade</a>
+                    <a><?php
+				if (isset($_SESSION['nome_usu_sessao'])) {
+					echo "<a href='interna.php'>Interna</a>";
+				} else {
+					
+				}
+				if (isset($_GET['logout'])) {
+					session_destroy();
+					header("location:../index.php");
+				}
+
+				?></a>
                     <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
                         &#9776;
                     </a>
@@ -36,7 +51,7 @@
         </section>
         <section>
             <h6>Criar monstro</h6>
-            <form action="#" method="post">
+            <form action="Processa_Monstro.php" method="post">
                 <label for="nome">Nome do Monstro:</label><br>
                 <input type="text" name="nomeM" required>
                 <br>
@@ -51,40 +66,14 @@
 
                 <label>Resistências:
                     <br><br>
-                    <input type="checkbox" name="resistencias[]" value="Ácido"> Ácido 
-                    <input type="checkbox" name="resistencias[]" value="Contundente"> Contundente <br>
-                    <input type="checkbox" name="resistencias[]" value="Cortante"> Cortante 
-                    <input type="checkbox" name="resistencias[]" value="Elétrico"> Elétrico
-                    <br>
-                    <input type="checkbox" name="resistencias[]" value="Força"> Força
-                    <input type="checkbox" name="resistencias[]" value="Gelo"> Gelo <br>
-                    <input type="checkbox" name="resistencias[]" value="Fogo"> Fogo
-                    <input type="checkbox" name="resistencias[]" value="Necrótico"> Necrótico
-                    <br>
-                    <input type="checkbox" name="resistencias[]" value="Perfurante"> Perfurante
-                    <input type="checkbox" name="resistencias[]" value="Psíquico"> Psíquico <br>
-                    <input type="checkbox" name="resistencias[]" value="Radiante"> Radiante
-                    <input type="checkbox" name="resistencias[]" value="Veneno"> Veneno
+                   
                     <br>
                 </label>
                 <br>
 
                 <label>Imunidades:
                     <br><br>
-                    <input type="checkbox" name="imunidades[]" value="Ácido"> Ácido
-                    <input type="checkbox" name="imunidades[]" value="Contundente"> Contundente <br>
-                    <input type="checkbox" name="imunidades[]" value="Cortante"> Cortante
-                    <input type="checkbox" name="imunidades[]" value="Elétrico"> Elétrico
-                    <br>
-                    <input type="checkbox" name="imunidades[]" value="Força"> Força
-                    <input type="checkbox" name="imunidades[]" value="Gelo"> Gelo <br>
-                    <input type="checkbox" name="imunidades[]" value="Fogo"> Fogo
-                    <input type="checkbox" name="imunidades[]" value="Necrótico"> Necrótico
-                    <br>
-                    <input type="checkbox" name="imunidades[]" value="Perfurante"> Perfurante
-                    <input type="checkbox" name="imunidades[]" value="Psíquico"> Psíquico <br>
-                    <input type="checkbox" name="imunidades[]" value="Radiante"> Radiante
-                    <input type="checkbox" name="imunidades[]" value="Veneno"> Veneno
+                    
                 </label>
                 <br><br>
 
