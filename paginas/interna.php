@@ -64,23 +64,21 @@ session_start();
                 <input type="number" name="acM" required>
                 <br>
 
-                <label>Resistências:
-                    <br><br>
-                   
-                    <br>
+                <label>Resistências do Monstro: <br>
+                <input type="text" name="resistencia">
                 </label>
                 <br>
 
-                <label>Imunidades:
-                    <br><br>
+                <label>Imunidades do Monstro:
+                    <br>
+                <input type="text" name="imunidade">
                     
                 </label>
                 <br><br>
 
-                <label class="input-personalizado">
-                    <span class="botao-selecionar">Selecione a imagem: <br><br></span>
-                    <img class="imagem" /><br>
-                    <input type="file" class="input-file" accept="image/*"><br>
+                <label>imagem: <br>
+                    
+                    <input name="arquivo" type="file"><br>
                   </label><br>
 
                 <label for="loot">Loot:</label><br><br>
