@@ -32,7 +32,7 @@ session_start();
                         <a href="paginas/Sociedade.php">Sociedade</a>
                         <a><?php
 				if (isset($_SESSION['nome_usu_sessao'])) {
-					echo "<a href='./interna.php'>Interna</a>";
+					echo "<a href='./paginas/interna.php'>Interna</a>";
 				} else {
 					
 				}

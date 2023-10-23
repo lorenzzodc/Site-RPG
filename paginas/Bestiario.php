@@ -65,10 +65,6 @@ session_start();
 				}
 
 				?>
-                    <a href="#1">O que é Calen Emyn?</a>
-                    <a href="#2">Para quais Sistemas?</a>
-                    <a href="#3">Qual a historia?</a>
-                    <a href="#">Página 6</a>
                     <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction2()">
                         &#9776;
                     </a>

@@ -65,15 +65,6 @@ session_start();
 				}
 
 				?>
-                    <a href="#2">Pacto Unificado</a>
-                    <a href="#3">Pacto do Tomo</a>
-                    <a href="#4">Conselho de Emyn</a>
-                    <a href="#5">Cavaleiros de Apharel</a>
-                    <a href="#6">Submundo</a>
-                    <a href="#7"> Ordem dos Caçadores</a>
-                    <a href="#8">Filhos de Aranthir</a>
-                    <a href="#9">Mercantes</a>
-                    <a href="#10">Irmandade Sombria</a>
                     <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction2()">
                         &#9776;
                     </a>
