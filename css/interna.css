@@ -39,8 +39,11 @@ textarea{
   .imagem{
     max-width: 100%;
   }
+  .imagem2{
+    max-width: 100%;
+  }
   
-  .input-file{
+  .input-file2{
     display:none;
   }
   

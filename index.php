@@ -55,7 +55,7 @@ session_start();
                 <div class="topnav2" id="myTopnav2">
             <?php
 				if (isset($_SESSION['nome_usu_sessao'])) {
-					echo "<a href='index.php?logout' class='active2'>SAIR   </a>";
+					echo "<a href='index.php?logout' class='active2'>| SAIR | </a>";
 				} else {
 					echo "<a href=./paginas/login.php class='active2'>login</a>";
 				}

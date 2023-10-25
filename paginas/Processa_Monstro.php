@@ -9,6 +9,8 @@ $loot = $_POST["loot"];
 $imagem = $_FILES['arquivo'];
 
 
+
+
 if (isset($_FILES['arquivo'])) {
     $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
     $novoNome = md5(time()) . $extensao;

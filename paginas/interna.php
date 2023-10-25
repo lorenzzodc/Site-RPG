@@ -88,7 +88,7 @@ session_start();
             </form>
 
             <h6>Criação de NPC</h6>
-            <form action="processar_npc.php" method="post">
+            <form action="processa_NPC.php" method="post">
                 <label for="nome">Nome do NPC:</label> <br>
                 <input type="text" id="nome" name="nomeN" required>
                 <br><br>
@@ -102,14 +102,7 @@ session_start();
                 <br><br>
 
                 <label for="raca">Raça do NPC:</label> <br>
-                <input type="text" id="raca" name="raca">
-                <br><br>
-                <label class="input-personalizado">
-                    <span class="botao-selecionar">Selecione a imagem: <br><br></span>
-                    <img class="imagem" /><br>
-                    <input type="file" class="input-file" accept="image/*" name="arquivo"><br>
-                </label><br>
-                
+                <input type="text" id="raca" name="raca"><br><br>
                 <label for="descricao">Descrição:</label><br><br>
                 <textarea id="descricao" name="descricao" rows="4" cols="40" maxlength="500"></textarea>
                 <br><br>
@@ -132,6 +125,8 @@ session_start();
         reader.onload = e => previewImg.src = e.target.result;
         reader.readAsDataURL(fileToUpload);
     };
+
+       
 </script>
 
 </html>
