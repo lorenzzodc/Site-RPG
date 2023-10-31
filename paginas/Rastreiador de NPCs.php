@@ -11,12 +11,14 @@ session_start();
     <link rel="stylesheet" href="../css/menu.css">
     <link rel="stylesheet" href="../css/menu2.css">
     <link rel="stylesheet" href="../css/corpo.css">
+    <link rel="stylesheet" href="../css/NPC.css">
     <script src="../js/scrpits.js"></script>
 
     <title>Calen Emyn</title>
 </head>
 
 <body>
+
     <body>
         <header>
             <section>
@@ -29,23 +31,22 @@ session_start();
                         <a href="Bestiario.php">Bestiário</a>
                         <a href="Politica e Faccoes.php">Política e Facções</a>
                         <a href="Rastreiador de NPCs.php">Rastreiador de NPC</a>
-                        <a href="Sociedade.php">Sociedade</a>  
+                        <a href="Sociedade.php">Sociedade</a>
                         <a><?php
-				if (isset($_SESSION['nome_usu_sessao'])) {
-					echo "<a href='interna.php'>Interna</a>";
-				} else {
-					
-				}
-				if (isset($_GET['logout'])) {
-					session_destroy();
-					header("location:../index.php");
-				}
+                            if (isset($_SESSION['nome_usu_sessao'])) {
+                                echo "<a href='interna.php'>Interna</a>";
+                            } else {
+                            }
+                            if (isset($_GET['logout'])) {
+                                session_destroy();
+                                header("location:../index.php");
+                            }
 
-				?></a>                   
+                            ?></a>
                         <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
                             &#9776;
                         </a>
-    
+
                     </div>
                 </nav>
             </section>
@@ -53,25 +54,68 @@ session_start();
         <section>
             <nav>
                 <div class="topnav2" id="myTopnav2">
-                <?php
-				if (isset($_SESSION['nome_usu_sessao'])) {
-					echo "<a href='../index.php?logout' class='active2'>| sair |</a>";
-				} else {
-					echo "<a href=login.php class='active2'>login</a>";
-				}
-				if (isset($_GET['logout'])) {
-					session_destroy();
-					header("location:index.php");
-				}
+                    <?php
+                    if (isset($_SESSION['nome_usu_sessao'])) {
+                        echo "<a href='../index.php?logout' class='active2'>| sair |</a>";
+                    } else {
+                        echo "<a href=login.php class='active2'>login</a>";
+                    }
+                    if (isset($_GET['logout'])) {
+                        session_destroy();
+                        header("location:index.php");
+                    }
 
-				?>
+                    ?>
                     <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction2()">
                         &#9776;
                     </a>
-    
+
                 </div>
             </nav>
         </section>
-</body>
+
+        <table>
+            <thead>
+                <th>nome</th>
+                <th>AC</th>
+                <th>PV</th>
+                <th>Raça</th>
+                <th>Descrição</th>
+            </thead>
+            <tbody>
+                <?php
+                include "conexaoDB.php";
+                $query = "Select nome,ac,pv,raça,descricao from npc";
+                $data = mysqli_query($conn, $query);
+                if($data){
+                    while ($linha = mysqli_fetch_assoc($data)){
+                      ?>
+                        <tr>
+                    <td><?php echo $linha["nome"]; ?></td>
+                    <td><?php echo $linha["ac"]; ?></td>
+                    <td><?php echo $linha["pv"]; ?></td>
+                    <td><?php echo $linha["raça"]; ?></td>
+                    <td><?php echo $linha["descricao"]; ?></td>
+                </tr>
+                <?php
+                    }
+                }
+                ?>
+                
+                
+
+
+
+
+
+
+
+
+
+            </tbody>
+        </table>
+
+
+    </body>
 
 </html>

@@ -7,6 +7,7 @@ $resistencia = $_POST["resistencia"];
 $imunidade = $_POST["imunidade"];
 $loot = $_POST["loot"];
 $imagem = $_FILES['arquivo'];
+$fraqueza = $_POST['fraqueza'];
 
 
 
@@ -15,9 +16,10 @@ if (isset($_FILES['arquivo'])) {
     $extensao = strtolower(substr($_FILES['arquivo']['name'], -4));
     $novoNome = md5(time()) . $extensao;
     $diretorio = "../public/";
-    move_uploaded_file($_FILES['arquivo']['tmp_name'], $diretorio . $novoNome);
+    $nomeFim = $diretorio . $novoNome;
+    move_uploaded_file($_FILES['arquivo']['tmp_name'], $nomeFim);
 
-    $sql = "INSERT INTO monstros (nome,pv,ac,resistencias,imunidades,loot, nome_imagem) VALUES ('$nomeM','$pvM','$acM','$resistencia','$imunidade','$loot','$novoNome')";
+    $sql = "INSERT INTO monstros (nome,pv,ac,resistencias,imunidades,fraquezas,loot, nome_imagem) VALUES ('$nomeM','$pvM','$acM','$resistencia','$imunidade','$fraqueza','$loot','$nomeFim')";
 
 
     if ($conn->query($sql) === true) {

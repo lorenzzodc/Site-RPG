@@ -73,6 +73,12 @@ session_start();
                     <input type="text" name="imunidade">
 
                 </label>
+                <br>
+                <label>Fraquezas do Monstro:
+                    <br>
+                    <input type="text" name="fraqueza">
+
+                </label>
                 <br><br>
 
                 <label class="input-personalizado">
@@ -106,7 +112,6 @@ session_start();
                 <label for="descricao">Descrição:</label><br><br>
                 <textarea id="descricao" name="descricao" rows="4" cols="40" maxlength="500"></textarea>
                 <br><br>
-
                 <input type="submit" value="Criar NPC">
             </form>
 
@@ -125,8 +130,6 @@ session_start();
         reader.onload = e => previewImg.src = e.target.result;
         reader.readAsDataURL(fileToUpload);
     };
-
-       
 </script>
 
 </html>

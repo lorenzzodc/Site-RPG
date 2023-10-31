@@ -36,6 +36,10 @@ textarea{
     cursor: pointer;
   }
   
+  .input-personalizado2{
+    cursor: pointer;
+  }
+  
   .imagem{
     max-width: 100%;
   }
