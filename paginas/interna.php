@@ -22,7 +22,7 @@ session_start();
         <section>
             <nav>
                 <div class="topnav" id="myTopnav">
-                    <a href="../index.php" class="active"> Sair</a>
+                    <a href="../index.php" class="active"> Inicio</a>
                     <a href="Deuses e Divindades.php">Deuses e Divindades</a>
                     <a href="história do mundo.php">História do Mundo</a>
                     <a href="Mapa Interativo.php">Mapa Interativo</a>
@@ -48,74 +48,79 @@ session_start();
                 </div>
             </nav>
         </section>
-        <section>
-            <h6>Criar monstro</h6>
-            <form action="Processa_Monstro.php" method="post" enctype="multipart/form-data">
-                <label for="nome">Nome do Monstro:</label><br>
-                <input type="text" name="nomeM" required>
-                <br>
+        <div class="container">
 
-                <label for="pv">Pontos de Vida (PV):</label><br>
-                <input type="number" name="pvM" required>
-                <br>
+            <div class="div1">
 
-                <label for="ac">Classe de Armadura (AC):</label><br>
-                <input type="number" name="acM" required>
-                <br>
-
-                <label>Resistências do Monstro: <br>
-                    <input type="text" name="resistencia">
-                </label>
-                <br>
-
-                <label>Imunidades do Monstro:
+                <form action="Processa_Monstro.php" method="post" enctype="multipart/form-data">
+                    <h6>Criar monstro</h6>
+                    <label for="nome">Nome do Monstro:</label><br>
+                    <input type="text" name="nomeM" required>
                     <br>
-                    <input type="text" name="imunidade">
 
-                </label>
-                <br>
-                <label>Fraquezas do Monstro:
+                    <label for="pv">Pontos de Vida (PV):</label><br>
+                    <input type="number" name="pvM" required>
                     <br>
-                    <input type="text" name="fraqueza">
 
-                </label>
-                <br><br>
+                    <label for="ac">Classe de Armadura (AC):</label><br>
+                    <input type="number" name="acM" required>
+                    <br>
 
-                <label class="input-personalizado">
-                    <span class="botao-selecionar">Selecione a imagem: <br><br></span>
-                    <img class="imagem" /><br>
-                    <input type="file" class="input-file" accept="image/*" name="arquivo"><br>
-                </label><br>
-                <label for="loot">Loot:</label><br><br>
-                <textarea type="text" id="loot" name="loot" maxlength="255" rows="4" cols="40"></textarea>
-                <br><br>
+                    <label>Resistências do Monstro: <br>
+                        <input type="text" name="resistencia">
+                    </label>
+                    <br>
 
-                <input type="submit" value="Criar Monstro">
-            </form>
+                    <label>Imunidades do Monstro:
+                        <br>
+                        <input type="text" name="imunidade">
 
-            <h6>Criação de NPC</h6>
-            <form action="processa_NPC.php" method="post">
-                <label for="nome">Nome do NPC:</label> <br>
-                <input type="text" id="nome" name="nomeN" required>
-                <br><br>
+                    </label>
+                    <br>
+                    <label>Fraquezas do Monstro:
+                        <br>
+                        <input type="text" name="fraqueza">
 
-                <label for="ac">Classe de Armadura (AC):</label> <br>
-                <input type="number" id="ac" name="acN" required>
-                <br><br>
+                    </label>
+                    <br><br>
 
-                <label for="pv">Pontos de Vida (PV):</label> <br>
-                <input type="number" id="pv" name="pvN" required>
-                <br><br>
+                    <label class="input-personalizado">
+                        <span class="botao-selecionar">Selecione a imagem: <br><br></span>
+                        <img class="imagem" /><br>
+                        <input type="file" class="input-file" accept="image/*" name="arquivo"><br>
+                    </label><br>
+                    <label for="loot">Loot:</label><br><br>
+                    <textarea type="text" id="loot" name="loot" maxlength="255" rows="4" cols="40"></textarea>
+                    <br><br>
 
-                <label for="raca">Raça do NPC:</label> <br>
-                <input type="text" id="raca" name="raca"><br><br>
-                <label for="descricao">Descrição:</label><br><br>
-                <textarea id="descricao" name="descricao" rows="4" cols="40" maxlength="500"></textarea>
-                <br><br>
-                <input type="submit" value="Criar NPC">
-            </form>
+                    <input type="submit" value="Criar Monstro">
+                </form>
+            </div>
+            <div class="div2">
+                <form action="processa_NPC.php" method="post">
+                    <h6>Criação de NPC</h6>
+                    <label for="nome">Nome do NPC:</label> <br>
+                    <input type="text" id="nome" name="nomeN" required>
+                    <br><br>
 
-        </section>
+                    <label for="ac">Classe de Armadura (AC):</label> <br>
+                    <input type="number" id="ac" name="acN" required>
+                    <br><br>
+
+                    <label for="pv">Pontos de Vida (PV):</label> <br>
+                    <input type="number" id="pv" name="pvN" required>
+                    <br><br>
+
+                    <label for="raca">Raça do NPC:</label> <br>
+                    <input type="text" id="raca" name="raca"><br><br>
+                    <label for="descricao">Descrição:</label><br><br>
+                    <textarea id="descricao" name="descricao" rows="4" cols="40" maxlength="500"></textarea>
+                    <br><br>
+                    <input type="submit" value="Criar NPC">
+                </form>
+            </div>
+
+        </div>
     </header>
 </body>
 <script>

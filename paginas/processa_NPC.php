@@ -7,7 +7,7 @@ $raca= $_POST["raca"];
 $desc= $_POST["descricao"];
 
 
-    $sql = "INSERT INTO npc (nome,ac,pv,raça,descricao) VALUES ('$nomeM','$acM','$pvM','$raca','$desc')";
+    $sql = "INSERT INTO npc (nome,ac,pv,raca,descricao) VALUES ('$nomeM','$acM','$pvM','$raca','$desc')";
 
 if ($conn->query($sql) === true) {
     echo "<script language='javascript' type='text/javascript'>

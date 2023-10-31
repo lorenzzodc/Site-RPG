@@ -2,7 +2,7 @@
 session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -85,7 +85,7 @@ session_start();
             <tbody>
                 <?php
                 include "conexaoDB.php";
-                $query = "Select nome,ac,pv,raça,descricao from npc";
+                $query = "Select nome,ac,pv,raca,descricao from npc";
                 $data = mysqli_query($conn, $query);
                 if($data){
                     while ($linha = mysqli_fetch_assoc($data)){
@@ -94,7 +94,7 @@ session_start();
                     <td><?php echo $linha["nome"]; ?></td>
                     <td><?php echo $linha["ac"]; ?></td>
                     <td><?php echo $linha["pv"]; ?></td>
-                    <td><?php echo $linha["raça"]; ?></td>
+                    <td><?php echo $linha["raca"]; ?></td>
                     <td><?php echo $linha["descricao"]; ?></td>
                 </tr>
                 <?php
