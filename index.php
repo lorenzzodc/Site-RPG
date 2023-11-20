@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,14 +22,26 @@
             <section>
                 <nav>
                     <div class="topnav" id="myTopnav">
-                        <a href="index.html" class="active"> inicio</a>
-                        <a href="paginas/Deuses e Divindades.html">Deuses e Divindades</a>
-                        <a href="paginas/história do mundo.html">História do Mundo</a>
-                        <a href="paginas/Mapa Interativo.html">Mapa Interativo</a>
-                        <a href="paginas/Bestiario.html">Bestiário</a>
-                        <a href="paginas/Politica e Faccoes.html">Política e Facções</a>
-                        <a href="paginas/Rastreiador de NPCs.html">Rastreiador de NPC</a>
-                        <a href="paginas/Sociedade.html">Sociedade</a>
+                        <a href="index.php" class="active"> inicio</a>
+                        <a href="paginas/Deuses e Divindades.php">Deuses e Divindades</a>
+                        <a href="paginas/história do mundo.php">História do Mundo</a>
+                        <a href="paginas/Mapa Interativo.php">Mapa Interativo</a>
+                        <a href="paginas/Bestiario.php">Bestiário</a>
+                        <a href="paginas/Politica e Faccoes.php">Política e Facções</a>
+                        <a href="paginas/Rastreiador de NPCs.php">Rastreiador de NPC</a>
+                        <a href="paginas/Sociedade.php">Sociedade</a>
+                        <a><?php
+				if (isset($_SESSION['nome_usu_sessao'])) {
+					echo "<a href='./paginas/interna.php'>Interna</a>";
+				} else {
+					
+				}
+				if (isset($_GET['logout'])) {
+					session_destroy();
+					header("location:index.php");
+				}
+
+				?></a>
                         <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">
                             &#9776;
                         </a>
@@ -38,6 +53,18 @@
         <section>
             <nav>
                 <div class="topnav2" id="myTopnav2">
+            <?php
+				if (isset($_SESSION['nome_usu_sessao'])) {
+					echo "<a href='index.php?logout' class='active2'>| SAIR | </a>";
+				} else {
+					echo "<a href=./paginas/login.php class='active2'>login</a>";
+				}
+				if (isset($_GET['logout'])) {
+					session_destroy();
+					header("location:index.php");
+				}
+
+				?>
                     <a href="#1">O que é Calen Emyn?</a>
                     <a href="#2">Para quais Sistemas?</a>
                     <a href="#3">Qual a historia?</a>
@@ -135,7 +162,7 @@
                 emocionantes. Prepare-se para escrever sua própria saga e mergulhar na aventura sem limites de Calen
                 Emyn, onde a única história que importa é a que você cria. <br><br>
 
-                <strong> A Liberdade de Criar:</strong> <br><br>
+               <strong> A Liberdade de Criar:</strong> <br><br>
                 Ao adentrar o mundo de Calen Emyn, os jogadores e o mestre são recebidos por uma folha em branco, pronta
                 para receber suas ideias e inspirações. Não há trama predeterminada ou narrativa rígida que limite as
                 possibilidades. Em vez disso, é uma oportunidade de construir algo verdadeiramente único e sob medida
@@ -147,7 +174,7 @@
                 mapas, criar facções, desenvolver personagens não jogadores e estabelecer os conflitos do cenário de
                 acordo com sua visão. <br><br>
 
-                <strong>Jogadores como Heróis e Contadores de Histórias:</strong> <br><br>
+               <strong>Jogadores como Heróis e Contadores de Histórias:</strong> <br><br>
                 Os jogadores, por sua vez, têm a oportunidade de serem não apenas heróis de suas próprias histórias, mas
                 também contadores de histórias. Eles podem contribuir com ideias, desenvolver o passado e os objetivos
                 de seus personagens, e influenciar o curso dos eventos no mundo de Calen Emyn. A narrativa é uma
