@@ -1,5 +1,5 @@
 <?php
-	include('conexao.php');
+	include('conexao.html');
 	$login = $_POST['login'];
 	$senha = $_POST['senha'];
 	
@@ -8,14 +8,14 @@
 if($login == "" || $login == null){
 echo "<script language='javascript' type='text/javascript'>
 alert('O campo login deve ser preenchido!');
-window.location.href='cadastro.php';
+window.location.href='cadastro.html';
 </script>";	
 	}else{
 		if($senha == "" || 
 		$senha == null){
 		echo "<script language='javascript' type='text/javascript'>
 		alert('O campo senha deve ser preenchido!');
-		window.location.href='cadastro.php';
+		window.location.href='cadastro.html';
 		</script>";
 		die();	
 		}else{
@@ -25,11 +25,11 @@ window.location.href='cadastro.php';
 			if($executar){
 			echo "<script language='javascript' type='text/javascript'>
 			alert('Login cadastrado com sucesso!');
-			window.location.href='login.php';</script>";
+			window.location.href='login.html';</script>";
 			}else{
 			echo "<script language='javascript' type='text/javascript'>
 			alert('Não foi possível cadastrar!');
-			window.location.href='cadastro.php';</script>";
+			window.location.href='cadastro.html';</script>";
 
 			}
 		}

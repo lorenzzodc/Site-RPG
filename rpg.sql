@@ -1,6 +1,6 @@
 -- phpMyAdmin SQL Dump
 -- version 4.8.4
--- https://www.phpmyadmin.net/
+-- https://www.htmlmyadmin.net/
 --
 -- Host: 127.0.0.1
 -- Generation Time: 01-Nov-2023 às 00:41

@@ -55,24 +55,24 @@ session_start();
 			<label for="bt_menu">&#9776;</label>
 			<nav id="menu">
 				<ul>
-					<li><a href="./index.php">Inicio</a></li>
-					<li><a href="./paginas/pagina2.php">Página 2</a>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./paginas/pagina2.html">Página 2</a>
 						<ul>
-							<li><a href="./paginas/cadastro.php">Cadastro Login</a></li>
-							<li><a href="./paginas/login.php">Logar</a></li>
+							<li><a href="./paginas/cadastro.html">Cadastro Login</a></li>
+							<li><a href="./paginas/login.html">Logar</a></li>
 							<li><a href="#">Sub 4</a></li>
 						</ul>
 					</li>
-					<li><a href="./paginas/pagina3.php">Página 3</a>
+					<li><a href="./paginas/pagina3.html">Página 3</a>
 						<ul>
 							<li><a href="#">Sub 2</a></li>
 							<li><a href="#">Sub 3</a></li>
 							<li><a href="#">Sub 4</a></li>
 						</ul>
 					</li>
-					<li><a href="./paginas/pagina4.php">Página 4</a></li>
-					<li><a href="./paginas/pagina5.php">Página 5</a></li>
-					<li><a href="./paginas/pagina6.php">Página 6</a></li>
+					<li><a href="./paginas/pagina4.html">Página 4</a></li>
+					<li><a href="./paginas/pagina5.html">Página 5</a></li>
+					<li><a href="./paginas/pagina6.html">Página 6</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -83,13 +83,13 @@ session_start();
 				<?php
 				if (isset($_SESSION['nome_usu_sessao'])) {
 					echo 'olá ' . $_SESSION['nome_usu_sessao'] . 'tudo certo vivente? Seja bem vindo!';
-					echo "<a href='index.php?logout'>Logout</a>";
+					echo "<a href='index.html?logout'>Logout</a>";
 				} else {
-					echo "<a href='./paginas/login.php'>acessar Sistema</a>";
+					echo "<a href='./paginas/login.html'>acessar Sistema</a>";
 				}
 				if (isset($_GET['logout'])) {
 					session_destroy();
-					header("location:index.php");
+					header("location:index.html");
 				}
 
 				?>

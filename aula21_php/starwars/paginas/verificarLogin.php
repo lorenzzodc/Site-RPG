@@ -1,5 +1,5 @@
 <?php
-	include('conexao.php');
+	include('conexao.html');
 	$login = $_POST['login'];
 	$senha = $_POST['senha'];
 	$entrar = $_POST['entrar'];
@@ -16,13 +16,13 @@
 		if(mysqli_num_rows($verifica)<=0){
 		echo "<script language='javascript' type='text/javascript'>
 		alert('Usuário ou senha incorretos!');
-		window.location.href='login.php';
+		window.location.href='login.html';
 		</script>";	
 		die();
 		}else{
 			session_start();
 			$_SESSION['nome_usu_sessao']=$login;
-			header('location:../index.php');
+			header('location:../index.html');
 		}
 	}
 ?>

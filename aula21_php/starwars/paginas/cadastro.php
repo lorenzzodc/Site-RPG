@@ -36,24 +36,24 @@
   <label for="bt_menu">&#9776;</label>
 		<nav id="menu">
       <ul>
-          <li><a href="../index.php">Inicio</a></li>
-          <li><a href="./pagina2.php">Página 2</a>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./pagina2.html">Página 2</a>
               <ul>
-                  <li><a href="./cadastro.php">Cadastro Login</a></li>
-                  <li><a href="./login.php">Logar</a></li>
+                  <li><a href="./cadastro.html">Cadastro Login</a></li>
+                  <li><a href="./login.html">Logar</a></li>
 				  <li><a href="#">Sub 4</a></li>
               </ul>
           </li>
-          <li><a href="./pagina3.php">Página 3</a>
+          <li><a href="./pagina3.html">Página 3</a>
               <ul>
                   <li><a href="#">Sub 2</a></li>
                   <li><a href="#">Sub 3</a></li>
                   <li><a href="#">Sub 4</a></li>
               </ul>
           </li>
-          <li><a href="./pagina4.php">Página 4</a></li>
-		  <li><a href="./pagina5.php">Página 5</a></li>
-		  <li><a href="./pagina6.php">Página 6</a></li>
+          <li><a href="./pagina4.html">Página 4</a></li>
+		  <li><a href="./pagina5.html">Página 5</a></li>
+		  <li><a href="./pagina6.html">Página 6</a></li>
       </ul>
   </nav>
 	</section>
@@ -62,7 +62,7 @@
 		
 		<h2 align="center">Cadastro</h2>
 		
-			<form action="recebeCadastro.php" method="post" align="center">
+			<form action="recebeCadastro.html" method="post" align="center">
 			<label>Usuário<br />
 				<input type="text" name="login" id="login">			
 			</label><br />
